@@ -1,4 +1,4 @@
 # DevOps-notes
 
 
-These are my notes fo
+Welcome! These are my personal notes a
