@@ -51,6 +51,8 @@ What can slow down response time? Most common Database Performance problems
 - WAN connection
 - LAN issue
 - Lack of adequate server hardware ex CPU,Memorry,Network,Storage
-- Por
+- Poorly configured initialisation parameters - OS level misconfiguration.
+- Poor application coding
+- Concurrency problems; locks and waits for buffer cache access
 
 
