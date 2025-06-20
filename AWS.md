@@ -1,0 +1,109 @@
+
+
+**Edge locations**
+
+- The closer an edge location is to your end user the faster AWS can deliver your content
+- Data is stored in local warehouses for quicker access.
+
+
+**IAM Policies Structure**
+
+Version - version of the policy
+id - name of the policy
+Statement
+Effect - allow or deny access
+principle - accounr/usr/role to which this policy applies to
+Action - downloading and uploading objects to an S3 bucket
+Resource - what the action applies to for ex s3 bucket
+condition(optional) - condition for when this policy is in effect. 
+for ex this policy only works if the request comes from a certain ip address
+
+![[Screenshot 2025-06-17 at 17.45.14.png]]
+
+AWS CLI 
+- a tool that lets you interact with AWS services right away from the terminal
+- access AWS from command line interface ( CLI)
+- Direct access to the public APIs of AWS service 
+- Develop scripts to manage your resources
+
+AWS SDK (Software development Kit)
+
+- Tool that lets you interact with AWS services programmatically by using a programme lang
+- What is the SDK? A set of language specific APIs (bunch of prebuilt libraries for diff programming languages that make it easier to work with AWS for ex python, javascript)
+- Embedded within your application - you can spin up EC2 instances, upload file to s3 bucket direct from your application code.
+- Build powerful cloud integrated applications. 
+
+IAM roles for AWS services
+1. Some AWS services will need to peform actions on your behalf - assign permissions to AWS services with IAM roles
+2. Common roles - EC2 instances (access s3 dynamo db), Lambda Function roles, Roles for CloudFormation
+3. IAM roles gives AWS services temp access to other AWS services
+
+IAM security tools
+Manage AWS users and their permissions
+
+1. IAM credentials report (account-level)
+- lists all your account users and the status of their credentials.
+
+2. IAM Access Advisor (user-level)
+- Shows the service permissions granted to a user and when those services were last accessed. 
+
+**EC2 = Iaas**
+- Renting EC2, choose OS and configure it to your need 
+- Storing data on virtual drives (EBS) like a hard drive
+- Distributing load across machines (ELB) When you have multiple EC2 instances running you have to make sure that the traffic is shared evenly. It helps distribute incoming request to your instances so one machine isnt overloaded.
+- Scaling the services using an auto-scaling group (ASG)
+
+**Sizing and Configuration**
+
+-  OS: Linux,Window,Mac OS
+- How much compute power and cores (CPU)
+- RAM
+- How much storage space: Network attached (EBS) - Like a hard drive attached to an EC2. (EFS) - shared storage for multiple EC2. 
+  Hardware (EC2 instance store)-hardware level storage thats physically attached to the host machine. When the instance is stopped all the data is lost.
+- Network card: speed of the card depending how much traffic you expect + public ip address (your instance can be accessed from the internet)
+- firewalls rules:Security group acts as firewalls for your instance. You can set up rules who can access your instance and which traffic can get through
+- Bootstrap script/EC2 user data (configure at first launch) - This is a script that runs auto when your instance launches. You can use it to install softwarre, updates etc. 
+
+**EC2 User Data** - automated deployment 
+
+1.  Launching an instance and making sure it is up to date with the latest patches. The user data script takes care of this
+2. Install software - deploy engine X OR apache on your instance, instead of doing it manually you can have the user data script handle it.
+3. downloading files from internet ex application code, config files. 
+4. EC2 user data script runs with the root.
+
+**Choosing the right EC2 instance types**
+
+1. General Purpose - go to instances, ex web servers 
+
+
+2. Compute Optimized - choose this if you need lots of processing power, gives you extra CPU for heavy cal, batch processing 
+
+3. Memory Optimized - When your app needs a lot of memory/RAM for big data processing, in memory database.
+
+4. Storage Optimized - fast, high throughput storage for if you are dealing with large data sets or running databases that require quick access to storage 
+
+5. Acceleration Computing - GPUs. If you are doing machine learning, video processing
+
+6. HPC (High Performance Computing) - designed for intensive computing tasks that needs fast networking
+
+Example
+
+m5.2xlarge
+
+m= instance class (general purpose)
+5= instance generation
+large = size within the class. The bigger the size the more resources ex CPU
+
+Security Group
+
+- Control how traffic is allowed into or out of our EC2 instances
+- only contain allow rules
+- can reference by IP or by security group
+- Set rules that specify what traffic is allowed based on ip addresses.
+- Security groups are stateless meaning if you allow inbound traffic you also allow outbund traffic.
+
+
+If you set up a web server on an EC2 instance (like using Apache, Nginx, or another HTTP server), you would allow **inbound traffic on port 80** because When users visit your website by typing `http://yourdomain.com`, their browsers automatically try to connect to your server using **port 80**.
+**You allow inbound traffic on port 80 to let users access your website over HTTP.** Without it, your EC2 instance won’t respond to normal web requests.
+The web server listens for incoming requests — typically on **port 80 (HTTP)** or **port 443 (HTTPS)**.
+ To allow users (like people visiting your website) to reach your server, **traffic must be allowed into your EC2 instance** on that port.
