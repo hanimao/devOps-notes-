@@ -45,8 +45,10 @@ SQL Tuning
 
 DB time
 
-What can slow down response time?
+What can slow down response time? Most common Database Performance problems 
 
-- web browser used and how heavy i
+- web browser used and how heavy it is
 - WAN connection
 - LAN issue
+
+
