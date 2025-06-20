@@ -16,6 +16,9 @@ Relational database
 Bottleneck; Area of a system where resource contention is highest. Produces a slowness so you have to find these bottlenecks.
 Throughput: work per unit time
 Response time: Time to complete a given workload
-Baseline: A representation of system peShould capture usage highs and lows
+Baseline: A representation of system performance and the performance tuning relies on baseline. Should capture usage highs and lows and gives a picture of a normal running system. 
 Snapshot: Can be overlaid to compare against baselines 
+
+**Approaches to Performance Tuning** 
+
 
