@@ -40,4 +40,13 @@ SQL Tuning
 **AWR** (Automatic Workload Repository)
 
 - The AWR system collects, processes and maintains oracle performance statistics.
-- MMON(Manageability monitor process) & MMNL (Manage Ability Monitor Light process). Writes stats from the ASH buffer in the SGA. to disk and it writes to disk when the ASH bu
+- MMON(Manageability monitor process) & MMNL (Manage Ability Monitor Light process). Writes stats from the ASH buffer in the SGA. to disk and it writes to disk when the ASH buffer is full. 
+- stores data in SYSAUX tablespace for both non-container databases and container databases.
+
+DB time
+
+What can slow down response time?
+
+- web browser used and how heavy i
+- WAN connection
+- LAN issue
