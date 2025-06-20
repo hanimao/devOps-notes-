@@ -13,8 +13,9 @@ Relational database
 
 **Terms**
 
-Bottleneck; Area where resource contention is highest
+Bottleneck; Area of a system where resource contention is highest. Produces a slowness so you have to find these bottlenecks.
 Throughput: work per unit time
 Response time: Time to complete a given workload
-Baseline:Should capture usage highs and lows
+Baseline: A representation of system peShould capture usage highs and lows
 Snapshot: Can be overlaid to compare against baselines 
+
