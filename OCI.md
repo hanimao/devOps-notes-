@@ -27,12 +27,17 @@ Proactive tuning - solving problems before they occur
 - Monitor real-time session data 
 - Respond to Oracle alerts
 
-Reactive Tuning
+Reactive Tuning - fixing the issue as it comes 
 
 - Run ADDM jobs manually
 - Use ASH to resolve transient performance issues
 - Use AWR Compare periods to resolve performance degradation over time
 
 SQL Tuning 
-- Locate high load sql statements and tune the heck out of em
-- Optimize data access paths 
+- Locate high load sql statements and tune it.
+- Optimise data access paths  - how oracle is executing and satisfying queries and improving the performance.
+
+**AWR** (Automatic Workload Repository)
+
+The AWR system collects, processes and maintains oracle performance statistics.
+
