@@ -23,7 +23,7 @@ Snapshot: Can be overlaid to compare against baselines
 
 Proactive tuning - solving problems before they occur
 
-- Review ADDM (Automatic diagnostic monitor) findings regularly and implement recommendations. ADDM is part of the AWR. AWR is the engine that gather stats and builds snapshots every 1hr of your system 
+- Review ADDM (Automatic diagnostic monitor) findings regularly and implement recommendations. ADDM is part of the AWR. AWR is the engine that gather stats and builds snapshots every 1hr of your system state and ADM takes that data and presents it to us.
 - Monitor real-time session data 
 - Respond to Oracle alerts
 
