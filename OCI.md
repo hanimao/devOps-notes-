@@ -21,4 +21,18 @@ Snapshot: Can be overlaid to compare against baselines
 
 **Approaches to Performance Tuning** 
 
+Proactive tuning - solving problems before they occur
 
+- Review ADDM (Automatic diagnostic monitor) findings regularly and implement recommendations. ADDM is part of the AWR. AWR is the engine that gather stats and builds snapshots every 1hr of your system 
+- Monitor real-time session data 
+- Respond to Oracle alerts
+
+Reactive Tuning
+
+- Run ADDM jobs manually
+- Use ASH to resolve transient performance issues
+- Use AWR Compare periods to resolve performance degradation over time
+
+SQL Tuning 
+- Locate high load sql statements and tune the heck out of em
+- Optimize data access paths 
