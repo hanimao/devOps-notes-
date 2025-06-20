@@ -11,3 +11,10 @@ Relational database
 
 **DB performance tuning** 
 
+**Terms**
+
+Bottleneck; Area where resource contention is highest
+Throughput: work per unit time
+Response time: Time to complete a given workload
+Baseline:Should capture usage highs and lows
+Snapshot: Can be overlaid to compare against baselines 
