@@ -108,6 +108,9 @@ Control of inbound access
 - database access
 - web traffic
 
+Outbound traffic
+- controls what your instance is connected to for ex preventing it accessing the internet
+
 If you set up a web server on an EC2 instance (like using Apache, Nginx, or another HTTP server), you would allow **inbound traffic on port 80** because When users visit your website by typing `http://yourdomain.com`, their browsers automatically try to connect to your server using **port 80**.
 **You allow inbound traffic on port 80 to let users access your website over HTTP.** Without it, your EC2 instance won’t respond to normal web requests.
 The web server listens for incoming requests — typically on **port 80 (HTTP)** or **port 443 (HTTPS)**.
