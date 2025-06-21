@@ -98,10 +98,15 @@ Security Group
 
 - Control how traffic is allowed into or out of our EC2 instances
 - only contain allow rules
+- Control which ports are open in your instance. You dont want to expose every port because that will expose your instance to every traffic.
 - can reference by IP or by security group
 - Set rules that specify what traffic is allowed based on ip addresses.
 - Security groups are stateless meaning if you allow inbound traffic you also allow outbund traffic.
 
+Control of inbound access
+- ssh access
+- database access
+- web traffic
 
 If you set up a web server on an EC2 instance (like using Apache, Nginx, or another HTTP server), you would allow **inbound traffic on port 80** because When users visit your website by typing `http://yourdomain.com`, their browsers automatically try to connect to your server using **port 80**.
 **You allow inbound traffic on port 80 to let users access your website over HTTP.** Without it, your EC2 instance won’t respond to normal web requests.
