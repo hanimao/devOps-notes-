@@ -107,3 +107,4 @@ If you set up a web server on an EC2 instance (like using Apache, Nginx, or anot
 **You allow inbound traffic on port 80 to let users access your website over HTTP.** Without it, your EC2 instance won’t respond to normal web requests.
 The web server listens for incoming requests — typically on **port 80 (HTTP)** or **port 443 (HTTPS)**.
  To allow users (like people visiting your website) to reach your server, **traffic must be allowed into your EC2 instance** on that port.
+
