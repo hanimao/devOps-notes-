@@ -116,3 +116,10 @@ If you set up a web server on an EC2 instance (like using Apache, Nginx, or anot
 The web server listens for incoming requests — typically on **port 80 (HTTP)** or **port 443 (HTTPS)**.
  To allow users (like people visiting your website) to reach your server, **traffic must be allowed into your EC2 instance** on that port.
 
+
+
+![[Screenshot 2025-06-21 at 15.14.55.png]]
+
+Steps
+
+1. The SG is filtering traffic based on IP and ports 
