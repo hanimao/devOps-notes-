@@ -132,3 +132,5 @@ The web server listens for incoming requests — typically on **port 80 (HTTP)*
 
 1. Your EC2 instance can make request to any IP address on any pool unless your SG says otherwise. 
 2. If your instance needs to download updates of fetched data from external API the outbound traffic will be allowed by default. 
+
+Security group live outside
