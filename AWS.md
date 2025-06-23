@@ -164,3 +164,12 @@ Ports(you will be asked to open or block ports )
 Port 443: Encrypts web traffic which is essential for websites and apps handling sensitive data
 Port 53: Responsible for translating domain names like google.com to ip addresses. Essential for any app that requires domain name resolution!
 Port 3389: Used for Management of window-based EC2 instances 
+
+EC2 purchasing options
+
+1. On-Demand instances - short workload, pay by second
+2. Reserved (1&3Yrs) 
+Reserved - long workloads
+Convertible - long + flexible instances
+3. Savings Plans (1&3Years) - discount to committing to a certain amount of usage and more flexibility on how to use it across diff instances types and regions.
+4. 
