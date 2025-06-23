@@ -158,3 +158,8 @@ Ports(you will be asked to open or block ports )
 
 
 
+![[Screenshot 2025-06-23 at 15.17.42.png]]
+
+
+Port 443: Encrypts web traffic which is essential for websites and apps handling sensitive data
+Port 53: Responsible for translating domain names like google.com to ip addresses.
