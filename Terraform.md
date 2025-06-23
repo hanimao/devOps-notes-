@@ -18,3 +18,7 @@ How is Terraform deploying things to aws,cloud or azure?
 IaC
 - can be stored in version control system such as git to allow you to track changes, rollback to certain versions. 
 
+Infrastructure Orchestration vs Config Management;
+
+
+
