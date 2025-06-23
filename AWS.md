@@ -152,4 +152,7 @@ you might want all instances in one Sg a database tier to communicate to to all 
 Why is it useful?
 - Managing security easier
 
+Ports
+
+
 
