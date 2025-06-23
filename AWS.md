@@ -136,5 +136,9 @@ The web server listens for incoming requests — typically on **port 80 (HTTP)*
 - Security group live outside the EC2 - if traffic is blocked the EC2 instance won't see it.
 - Its good practice to have one SG dedicated just for SSH access so you don't affect other rules for web traffic or even app connections.
 - If your application is not accessible (time out) then its a security group issue
-- If your application gives a "connection refused"
+- If your application gives a "connection refused" error, then its an application error or its not launched
+- ALL INBOUND traffic is blocked by default
+- ALL OUTBOUND traffic is authorised by default
+
+
 
