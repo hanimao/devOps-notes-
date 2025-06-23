@@ -134,6 +134,7 @@ The web server listens for incoming requests — typically on **port 80 (HTTP)*
 2. If your instance needs to download updates of fetched data from external API the outbound traffic will be allowed by default. 
 
 - Security group live outside the EC2 - if traffic is blocked the EC2 instance won't see it.
-- Its good practice to have one SG dedicated just for SSH access so you dont affect other rules for web traffic or even app connections.
-- 
+- Its good practice to have one SG dedicated just for SSH access so you don't affect other rules for web traffic or even app connections.
+- If your application is not accessible (time out) then its a security group issue
+- If your application gives a "connection refused"
 
