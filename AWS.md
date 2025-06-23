@@ -146,7 +146,10 @@ What if you want to control access between instances and those instances might c
 EC2 Instance - using SG1 to manage its inbound traffic.
 SG1 not only references other IP it references other Sgs. It authorises SG1,SG2,SG3 to send on port 123. From authorising SG1 you allow any traffic from any instances to SG1, same thing for SG2 and SG3. 
 
+ex
+you might want all instances in one Sg a database tier to communicate to to all instances in another sg like app tier. Simplifies the configuraition by using sgs and not ip addresses. 
+
 Why is it useful?
-- Managing secuir
+- Managing security easier
 
 
