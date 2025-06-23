@@ -141,4 +141,6 @@ The web server listens for incoming requests — typically on **port 80 (HTTP)*
 - ALL OUTBOUND traffic is authorised by default
 
 
+What if you want to control access between instances?
+
 
