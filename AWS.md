@@ -143,5 +143,7 @@ The web server listens for incoming requests — typically on **port 80 (HTTP)*
 
 What if you want to control access between instances and those instances might change ips?
 
+EC2 Instance - using SG1 to manage its inbound traffic.
+SG1 not only references other IP it references other Sgs
 
 
