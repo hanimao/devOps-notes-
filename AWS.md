@@ -162,4 +162,5 @@ Ports(you will be asked to open or block ports )
 
 
 Port 443: Encrypts web traffic which is essential for websites and apps handling sensitive data
-Port 53: Responsible for translating domain names like google.com to ip addresses.
+Port 53: Responsible for translating domain names like google.com to ip addresses. Essential for any app that requires domain name resolution!
+Port 3389: Used for Management of window-based EC2 instances 
