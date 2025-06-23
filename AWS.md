@@ -153,6 +153,8 @@ Why is it useful?
 - Managing security easier
 
 Ports(you will be asked to open or block ports )
-- Each port c
+- Each port corresponds to a certain service or protocol
+
+
 
 
