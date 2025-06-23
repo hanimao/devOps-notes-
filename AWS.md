@@ -120,8 +120,15 @@ The web server listens for incoming requests — typically on **port 80 (HTTP)*
 
 ![[Screenshot 2025-06-21 at 15.14.55.png]]
 
-Steps
+**Steps**
+
+**Inbound**
 
 1. The SG is filtering traffic based on IP and ports. Any income you request has to match the rules you set up. 
 2. Lets say your computer is trying to connect to your EC2 instance on port 22. Since the IP address of your computer is authorised to use port 22 the SG allows this connection
-3. 
+3. You can now secure your SSH into EC2 instance
+
+**Outbound**  - meaning data going out from instance to the internet 
+
+1. Your EC2 instance can make request to any IP address on any pool unless your SG says otherwise. 
+2. If your 
