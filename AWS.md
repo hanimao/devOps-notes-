@@ -122,4 +122,4 @@ The web server listens for incoming requests — typically on **port 80 (HTTP)*
 
 Steps
 
-1. The SG is filtering traffic based on IP and ports 
+1. The SG is filtering traffic based on IP and ports. Any income you request has to match the rules you set up. 
