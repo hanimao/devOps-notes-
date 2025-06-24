@@ -196,4 +196,17 @@ Each company internet gateaway is taking traffic from their private networks and
 Why do you need a elastic ip?
 If you have external services that needs to point to your instance for ex if you host a website or connect to your instance from the outside sources keeping the same ip ensures no disruption.
 
+- You can mask the failure of an instance or software by remapping the address to another instance in your account. ex; need to switch traffic from one instance to another
 
+Elastic IP is not the best practice for scalability and flexibility. Use load balancer instead. You can only have 5 elastic ip in your account and request more from AWS. 
+Reconsider set up and look at other ways to manage resources 
+
+**EBS** - (elastic block service)
+
+- A network drive that you can attach to EC2 instances
+- Virtual storage
+- The data on the EBS volume remains even after their termination. 
+- Bound to a specific AZ BUT can snapshot the vol and create new ones in diff zones.
+
+AMI
+- A pre configured template that contains all the info needed to launch EC2 instance for ex softwa
