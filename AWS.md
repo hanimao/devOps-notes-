@@ -194,6 +194,6 @@ Each company internet gateaway is taking traffic from their private networks and
 - If you reserve an elastic ip and you don't attach it to the instance AWS charges. 
 
 Why do you need a elastic ip?
-If you have external services that needs to point to your instance for ex if you host a website or connect to your instance from the outside sources keeping the same ip ensures no distruption.
+If you have external services that needs to point to your instance for ex if you host a website or connect to your instance from the outside sources keeping the same ip ensures no disruption.
 
 
