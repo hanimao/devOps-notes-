@@ -4,7 +4,7 @@ Computer Network
 
 1. **Local Area Network** (LAN)
 
-ex home wifi network- covers a limited area. Allows file sharing etc between devices within a local area.
+ex home wifi network/office building that covers a limited area. Allows file sharing etc between devices within a local area.
 
 2. **Wide Area Network** (WAN)
 

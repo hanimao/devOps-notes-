@@ -172,7 +172,11 @@ EC2 purchasing options
 Reserved - long workloads
 Convertible - long + flexible instances
 3. Savings Plans (1&3Years) - discount to committing to a certain amount of usage and more flexibility on how to use it across diff instances types and regions.
-4. Spot instances - cheap, short workloads and can lose 
-5. Dedicated hosts
-6. Dedicated instances
-7. Capacity Reservations 
+4. Spot instances - Lets you bid for unused cheap, short workloads and AWS can take their instances which is less reliable for ex use it for batch processing 
+5. Dedicated hosts - book an entire physical server, control instance placement. Useful for software licensing needs that you require to be on a certain machine.
+6. Dedicated instances - no other customers will share your underlying hardware. 
+7. Capacity Reservations - reserved capacity in a specific AZ for any duration. 
+
+Private vs Public IP (IPv4)
+
+Companies that have assigned a private ip address they are not routable on the public internet
