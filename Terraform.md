@@ -13,26 +13,34 @@ Writing scripts/templates writing it in terraform/cloudformation and then deploy
 
 How is Terraform deploying things to aws,cloud or azure?
 - Terraform is a cloud agnostic tool. Terraform can deploy to any cloud. This is done through the Terraform registry where it will install certain plugins. It will use certain API calls in order to be able to deploy to 2 different providers.
-- Terraform can deploy kubernettes resources, deploy certain things to vault
+- Terraform can deploy kubernetes resources, deploy certain things to vault
 
 IaC
 - can be stored in version control system such as git to allow you to track changes, rollback to certain versions. 
 
 Infrastructure Orchestration vs Config Management;
 
-**Config Management**
+**Config Management** - how these tools link in the DevOps space.
 
-ex; Ansible, puppet, chef
+ex; **Ansible, Puppet, Chef**
 
-
-
-
+Ansible - configuring your EC2 instances and these servers in order to run certain things such as hosting a wordpress server.
 
 
+**Infrastructure Orchestration****
 
-Infrastructure Orchestration
+ex; **AWS CloudFormation**, **Terraform** 
 
-ex; AWS CloudFormation
+- arranging in a orderly manner - orchestration
+- Using Terraform to deploy EC2 instances - how does a config management tool integrate into this.
 
 
+Steps
+1. Developer-IaC-Plan-Apply
+2. Terraform - wants to deploy an EC2 instance 
+3. Plan - What your code is trying to do for ex the resources you're trying to create.
 
+Tips
+1. When you are implementing IaC it is important to know the implication of your code in a production environment. 
+2. Testing and Validating your terraform plan. Don't want to break anything or deleting important resources.
+3. Start small with an MVP (minimum viable product) then iterate. Configuring the resources, 
