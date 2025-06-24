@@ -10,6 +10,16 @@ Git is a version distributed version controlled system that enables multiple use
 ==Version Control==
 1. Git is a version control system that is a standard stool for managing software projects
 
+Centralised (SVN) vs Distributed (Git)
+
+- SVN - everyone worked off a single central server. if the server went down you could not commit/do anything.
+- lock files but you will end up in merge conflict file.
+- Git - instead of relying on one server every developer has a full copy of the repo
+- 
+
+![[Screenshot 2025-06-24 at 00.22.49.png]]
+
+
 
 
 ==Merge Conflicts==

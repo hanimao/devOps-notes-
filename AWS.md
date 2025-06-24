@@ -172,7 +172,7 @@ EC2 purchasing options
 Reserved - long workloads
 Convertible - long + flexible instances
 3. Savings Plans (1&3Years) - discount to committing to a certain amount of usage and more flexibility on how to use it across diff instances types and regions.
-4. Spot instances
+4. Spot instances - cheap, short workloads and can lose 
 5. Dedicated hosts
 6. Dedicated instances
 7. Capacity Reservations 
