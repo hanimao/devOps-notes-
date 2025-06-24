@@ -41,6 +41,9 @@ Steps
 3. Plan - What your code is trying to do for ex the resources you're trying to create.
 
 Tips
-1. When you are implementing IaC it is important to know the implication of your code in a production environment. 
-2. Testing and Validating your terraform plan. Don't want to break anything or deleting important resources.
-3. Start small with an MVP (minimum viable product) then iterate. Configuring the resources, 
+1. When you are configuring IaC it is important to know the implication of your code in a production environment. 
+2. Testing and Validating your terraform plan. Don't want to break anything or deleting important resources. Make it aligns with what you are trying to deploy. 
+3. Start small with an MVP (minimum viable product) then iterate. Configuring the resources, that you need in order to deploy it into the cloud. 
+4. Then you could iterate. Maybe implementing variables, turning your code into a terraform module. 
+5. Implement dry software engineering principle. Dry means do not repeat yourself. 
+6. Important when it comes to Terraform, with terraform you have modules, things that can be used as templates 
