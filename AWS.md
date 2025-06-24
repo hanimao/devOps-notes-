@@ -179,4 +179,21 @@ Convertible - long + flexible instances
 
 Private vs Public IP (IPv4)
 
-Companies that have assigned a private ip address they are not routable on the public internet
+Companies that have assigned a private ip address they are not routable on the public internet meaning they can't communicate directly with external website.
+Each company internet gateaway is taking traffic from their private networks and translating to a public ip. 
+
+
+![[Screenshot 2025-06-24 at 11.48.29.png]]
+
+
+**Elastic IPs**
+
+- When you start and shut an instance, the public ip address changes because AWS allocates the ips dynamically.
+
+- Use an elastic ip if you want a fixed public ip address. 
+- If you reserve an elastic ip and you don't attach it to the instance AWS charges. 
+
+Why do you need a elastic ip?
+If you have external services that needs to point to your instance for ex if you host a website or connect to your instance from the outside sources keeping the same ip ensures no distruption.
+
+
