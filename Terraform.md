@@ -20,5 +20,19 @@ IaC
 
 Infrastructure Orchestration vs Config Management;
 
+**Config Management**
+
+ex; Ansible, puppet, chef
+
+
+
+
+
+
+
+Infrastructure Orchestration
+
+ex; AWS CloudFormation
+
 
 

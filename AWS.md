@@ -201,12 +201,22 @@ If you have external services that needs to point to your instance for ex if you
 Elastic IP is not the best practice for scalability and flexibility. Use load balancer instead. You can only have 5 elastic ip in your account and request more from AWS. 
 Reconsider set up and look at other ways to manage resources 
 
-**EBS** - (elastic block service)
+**EBS** - (elastic block store)
 
 - A network drive that you can attach to EC2 instances
 - Virtual storage
 - The data on the EBS volume remains even after their termination. 
 - Bound to a specific AZ BUT can snapshot the vol and create new ones in diff zones.
 
-AMI
-- A pre configured template that contains all the info needed to launch EC2 instance for ex softwa
+**AMI**
+- A pre configured template that contains all the info needed to launch EC2 instance for ex software, configuration, operating system, monitoring
+- Faster boot time as your software is pre packaged. 
+- Use AMI to launch instance to save time.
+- Specific region unless copied to another.
+- Launch EC2 from A public AMI, own, or AWS marketplace.
+
+**EFS** (Elastic file system)
+- Managed network file system which allows you to create a shared file system that can be mounted on many EC2.
+- EC2 works in multi AZ - a data stored in EFS is highly available and redundant across different AZs.
+- Scalability - grows auto as data is added.
+
