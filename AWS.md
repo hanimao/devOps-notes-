@@ -234,8 +234,13 @@ Reconsider set up and look at other ways to manage resources
 - Distribute traffic between EC2 instances.
 - When traffic comes in, load balancer forwards the request to the EC2 instances downstream. 
 - Constantly checking which instances are healthy. 
+- Your users does not need to know the address of each individual instance.
+- Hit the load balancer DNS endpoint
 
 **Reverse proxy**
 - Similar to load balancer but with extra functionality. 
 - Sits between your server and user.
-- 
+
+
+- Application load balance adds this reverse proxy feature handling requests, caching content, and providing security benefits like hiding the backend server's IP address.
+- route to traffic based on the content of the traffic 
