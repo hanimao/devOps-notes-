@@ -229,3 +229,11 @@ Reconsider set up and look at other ways to manage resources
 - adding more power for ex CPU,RAM. 
 - Common for non distributed system such as database
 - RDS, elasticache
+
+**Load Balancer**
+- Distribute traffic between EC2 instances.
+- When traffic comes in, load balancer forwards the request to the EC2 instances downstream. 
+- Constantly checking which instances are healthy. 
+
+**Reverse proxy**
+- Similar to load balancer but with extra functionality. 
