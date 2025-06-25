@@ -237,3 +237,5 @@ Reconsider set up and look at other ways to manage resources
 
 **Reverse proxy**
 - Similar to load balancer but with extra functionality. 
+- Sits between your server and user.
+- 
