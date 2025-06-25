@@ -220,3 +220,12 @@ Reconsider set up and look at other ways to manage resources
 - EC2 works in multi AZ - a data stored in EFS is highly available and redundant across different AZs.
 - Scalability - grows auto as data is added.
 
+**Horizontal vs Vertical Scaling**
+
+**Horizontal**
+- adding more instances
+
+**Vertical** 
+- adding more power for ex CPU,RAM. 
+- Common for non distributed system such as database
+- RDS, elasticache
