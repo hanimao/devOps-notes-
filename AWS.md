@@ -234,8 +234,28 @@ Reconsider set up and look at other ways to manage resources
 - Distribute traffic between EC2 instances.
 - When traffic comes in, load balancer forwards the request to the EC2 instances downstream. 
 - Constantly checking which instances are healthy. 
-- Your users does not need to know the address of each individual instance.
-- Hit the load balancer DNS endpoint
+- Your users does not need to know the address of each individual instance. Hit the load balancer DNS endpoint and it handles directing the traffic to the right instance.
+- SSL termination (HTTPS) for your websites - you can configure load balancer to handle SL cert and and HTTPS traffic for websites
+- Load balancer encrypts and decrypts traffic so EC2 can focus on app logic.
+- Enforce stickiness with cookies - sometimes you want to use a session and remain on the same server. User are sent back to the same instance for their requests using cookies.
+
+ELB(Elastic load balancer)
+- Managed load balance by AWS
+- AWS takes care of the high availability, upgrade and maintenance.
+- Cost less to do it yourself but MORE EFFORT! You'd need to set up your own load balance using tools such as HA proxy, Engine X etc.
+- ELB is integrated with other AWS Services such as;
+
+EC2,EC2 Auto Scaling Group,ECS
+Cloudwatch, ACM
+Route 53, WAF, Global Accelerator
+
+
+
+
+
+
+
+
 
 **Reverse proxy**
 - Similar to load balancer but with extra functionality. 
