@@ -239,7 +239,7 @@ Reconsider set up and look at other ways to manage resources
 - Load balancer encrypts and decrypts traffic so EC2 can focus on app logic.
 - Enforce stickiness with cookies - sometimes you want to use a session and remain on the same server. User are sent back to the same instance for their requests using cookies.
 
-ELB(Elastic load balancer)
+**ELB(Elastic load balancer)**
 - Managed load balance by AWS
 - AWS takes care of the high availability, upgrade and maintenance.
 - Cost less to do it yourself but MORE EFFORT! You'd need to set up your own load balance using tools such as HA proxy, Engine X etc.
@@ -249,6 +249,11 @@ EC2,EC2 Auto Scaling Group,ECS
 Cloudwatch, ACM
 Route 53, WAF, Global Accelerator
 
+**Health Checks** 
+- enable the load balancer to know if instances it forwards traffic to are available to reply to requests. 
+- Load balancer sends a request to a certain port and route. /health endpoint which can be configured to report on the incident status 
+- For ex; the load balancer can send the HTTP request to port 4567 on /health route of your instance. if your instance sends a 200 then the instance is healthy.
+- 
 
 
 

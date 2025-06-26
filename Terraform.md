@@ -47,3 +47,31 @@ Tips
 4. Then you could iterate. Maybe implementing variables, turning your code into a terraform module. 
 5. Implement dry software engineering principle. Dry means do not repeat yourself. 
 6. Important when it comes to Terraform, with terraform you have modules, things that can be used as templates 
+
+Current state file 
+- a record of your existing/up to date infrastructure. Helps ensure idem potency. Your terraform config no matter how many times you run it, it will produce the exact same thing. 
+- Will not deploy multiple things
+- .tfstate 
+
+Desired state file 
+- Changes you are trying to implement - resources you are deploying 
+- .tf
+
+
+How is connection being established between Terraform and AWS?
+
+Terraform Providers
+
+- A plugin that allows you to interact with cloud platforms, services.
+- Enables terraform to manage your resources in the cloud.
+
+Terraform Provider code
+- Source - your getting the AWS provider from the Hashicorp registry 
+- This blocks tells Terraform you are configuring AWS provider.
+- Terraform 0.13 - The version AWS is compatible with.
+
+![[Screenshot 2025-06-26 at 12.00.00.png]]
+
+**STEPS;**
+Terraform init - Initialising the backend where Terraform stores the state of your infrastructure.
+The terraform state can be stored in a local file on your machine. 
