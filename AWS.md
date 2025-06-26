@@ -177,7 +177,7 @@ Convertible - long + flexible instances
 6. Dedicated instances - no other customers will share your underlying hardware. 
 7. Capacity Reservations - reserved capacity in a specific AZ for any duration. 
 
-Private vs Public IP (IPv4)
+**Private vs Public IP (IPv4)**
 
 Companies that have assigned a private ip address they are not routable on the public internet meaning they can't communicate directly with external website.
 Each company internet gateaway is taking traffic from their private networks and translating to a public ip. 
@@ -262,7 +262,7 @@ Route 53, WAF, Global Accelerator
 - Gateaway Load Balancer (Layer3). Built for IP protocol. Designed to help you scale, deploy and manage third party network application like firewalls, traffic analysers in your VPC.
 
 
-How SG ensure traffic flow?
+**How SG ensure traffic flow?**
 
 - The SG allows the users to connect to the load balancer from anywhere in the internet.
 - The  SG allows traffic over port 80 http/https
@@ -271,6 +271,14 @@ How SG ensure traffic flow?
 - ASG; allows traffic ONLY from the load balancer. 
 
 ![[Screenshot 2025-06-26 at 16.10.06.png]]
+
+**Application Load Balancer Layer 7 (HTTPS)**
+- smart and understand whats going on in the request such as headers, cookies
+- low balance traffic to multiple HTTP applications across machines(target group)
+- low balance traffic to multiple app on the same machine (containers). You might have several apps on a single EC2 instance
+- Support for HTTP/2 and WebSocket
+HTTP2 - more efficient 
+- Support redirects (from HTTP to HTTPS)
 
 
 
