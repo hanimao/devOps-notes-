@@ -252,8 +252,14 @@ Route 53, WAF, Global Accelerator
 **Health Checks** 
 - enable the load balancer to know if instances it forwards traffic to are available to reply to requests. 
 - Load balancer sends a request to a certain port and route. /health endpoint which can be configured to report on the incident status 
-- For ex; the load balancer can send the HTTP request to port 4567 on /health route of your instance. if your instance sends a 200 then the instance is healthy.
-- 
+- For ex; the load balancer can send the HTTP request to port 4567 on /health route of your instance. If your instance sends a 200 then the instance is healthy.
+
+**Types of load balancers**
+
+- Classic load balancer - HTTP,HTTPS,TCP,SSL
+- Application load Balancer - HTTP,HTTPS,Websocket. Ideal for modern web apps. Operates at Layer 7 making it more smarter as it can make routing decision based on the content of the request ex URL, cookies.
+- Network Load balancer (layer 4 Transport Layer). Built for TCP and UDP. Handles millions of requests per second. Good for low latency application such as real time gaming.
+- Gateaway Load Balancer (Layer3). Built for IP protocol. Designed to help you scale, deploy and manage third party network application like firewalls, traffic analysers in your VPC.
 
 
 
