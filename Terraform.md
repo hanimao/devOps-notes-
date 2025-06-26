@@ -73,5 +73,10 @@ Terraform Provider code
 ![[Screenshot 2025-06-26 at 12.00.00.png]]
 
 **STEPS;**
-Terraform init - Initialising the backend where Terraform stores the state of your infrastructure.
-The terraform state can be stored in a local file on your machine. 
+1. **Terraform init** 
+- Initialising the backend where Terraform stores the state of your infrastructure
+-  The terraform state can be stored in a local file on your machine or it can be stored remotely in a storage space S3 so terraform can track your resources properly.
+- Downloads your provider. 
+
+1. **Terraform plan** 
+- Previewing the changes will make before they happen
