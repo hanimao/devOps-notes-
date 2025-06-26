@@ -262,8 +262,15 @@ Route 53, WAF, Global Accelerator
 - Gateaway Load Balancer (Layer3). Built for IP protocol. Designed to help you scale, deploy and manage third party network application like firewalls, traffic analysers in your VPC.
 
 
+How SG ensure traffic flow?
 
+- The SG allows the users to connect to the load balancer from anywhere in the internet.
+- The  SG allows traffic over port 80 http/https
+- Also allows encrypted traffic using SL TLS to reach load balancer. 
+- Source 0.0.0.0/0 ;  LB accepts traffic from anywhere in the internet
+- ASG; allows traffic ONLY from the load balancer. 
 
+![[Screenshot 2025-06-26 at 16.10.06.png]]
 
 
 
@@ -271,7 +278,5 @@ Route 53, WAF, Global Accelerator
 **Reverse proxy**
 - Similar to load balancer but with extra functionality. 
 - Sits between your server and user.
-
-
 - Application load balance adds this reverse proxy feature handling requests, caching content, and providing security benefits like hiding the backend server's IP address.
 - route to traffic based on the content of the traffic 

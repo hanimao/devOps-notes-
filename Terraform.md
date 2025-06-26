@@ -79,4 +79,5 @@ Terraform Provider code
 - Downloads your provider. 
 
 1. **Terraform plan** 
-- Previewing the changes will make before they happen
+- Previewing the changes will make before they happen. 'seeing the future'
+- Analysis your config file and compares them to the current state of your infrastructure. 
