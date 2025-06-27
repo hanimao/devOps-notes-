@@ -279,7 +279,11 @@ Route 53, WAF, Global Accelerator
 - Support for HTTP/2 and WebSocket
 HTTP2 - more efficient 
 - Support redirects (from HTTP to HTTPS)
-
+- Route to different target groups
+- Target groups EXAMPLES; EC2, Lambda functions, containers
+- Routing based on path in URL, requests can go to hanimao.io/users or hanimao.io/posts. Good for micoservice architecture where each path is handled by a different service.
+- Routing based on hostname in URL blog.hani.io. Run many domains on the same AOB.
+- Based on Query String, Headers (hani.io/users?id=456&order=false). This is a request coming
 
 
 
