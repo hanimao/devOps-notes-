@@ -78,6 +78,16 @@ Terraform Provider code
 -  The terraform state can be stored in a local file on your machine or it can be stored remotely in a storage space S3 so terraform can track your resources properly.
 - Downloads your provider. 
 
-1. **Terraform plan** 
+2. **Terraform plan** 
 - Previewing the changes will make before they happen. 'seeing the future'
-- Analysis your config file and compares them to the current state of your infrastructure. 
+- Analysis your config file and compares them to the current state of your infrastructure then generates a plan
+![[Screenshot 2025-06-27 at 15.28.20.png]]
+
+
++ create: Resources that will be created
++  - update-in-place: Resources that will be modified 
++ destroy: Resources that will be deleted.
+
+2. **Terraform apply**
+- Once the plan looks good time to apply!
+- 
