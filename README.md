@@ -1,18 +1,18 @@
 # DevOps-notes
 
 
-**Welcome!** These are my personal notes and learnings on various DevOps topics. So far, I've covered:
+**Welcome!** These are my personal notes on various DevOps topics. So far, I've covered:
 
 - **Networking**
 - **Linux**
 - **Git**
-- **AWS Infrastructure**
-- **Oracle Infrastructure** 
+- **Terraform**
+- **AWS
+- **OCI Infrastructure** 
 - **Bash Scripting**
 
 Stay tuned - more coming soon, including 
 
-- **Terraform** 
 - **Kubernetes**
 - **CI/CD**
 - **and much more...**
