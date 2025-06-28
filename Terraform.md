@@ -97,5 +97,8 @@ Terraform Provider code
 
 **Resource Block** 
 - used to define a piece of infrastructure (EC2) you want to manage.
+- AMI - template for your EC2
+- T2.mico - CPU and memory. 
+- tags - labels and tags your resources.
 - 
 ![[Screenshot 2025-06-27 at 16.29.50.png]]
