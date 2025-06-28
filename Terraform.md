@@ -90,4 +90,12 @@ Terraform Provider code
 
 2. **Terraform apply**
 - Once the plan looks good time to apply!
+- Generate another execution plan. 
+
+3. **Terraform Destroy**
+- Destroys all remote objects managed by a particular Terraform config.
+
+**Resource Block** 
+- used to define a piece of infrastructure (EC2) you want to manage.
 - 
+![[Screenshot 2025-06-27 at 16.29.50.png]]
