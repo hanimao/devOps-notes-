@@ -102,3 +102,7 @@ Terraform Provider code
 - tags - labels and tags your resources.
 - 
 ![[Screenshot 2025-06-27 at 16.29.50.png]]
+Terraform Importing
+
+- What if a resource already exists in your cloud environment? 
+- Using terraform import to bring your existing resources under terraform management.
