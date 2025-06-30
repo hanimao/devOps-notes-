@@ -287,6 +287,14 @@ HTTP2 - more efficient
 
 
 
+
+
+
+
+
+
+
+
 **Reverse proxy**
 - Similar to load balancer but with extra functionality. 
 - Sits between your server and user.
