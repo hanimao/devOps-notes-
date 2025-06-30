@@ -105,4 +105,7 @@ Terraform Provider code
 Terraform Importing
 
 - What if a resource already exists in your cloud environment? 
-- Using terraform import to bring your existing resources under terraform management.
+- Using terraform import to bring your existing resources you created manually under terraform management and into terraform environment 
+Steps
+1. First identify the resource in the cloud
+2. Create a resource block in Terraform config.
